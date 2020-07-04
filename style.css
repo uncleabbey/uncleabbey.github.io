@@ -1,0 +1,269 @@
+:root {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.wrapper .header-container {
+  background: linear-gradient(
+      rgba(0, 0, 255, 0.8),
+      rgba(65, 105, 225, 0.7),
+      rgba(0, 0, 255, 0.8)
+    ),url('new_ab-removebg-preview.png') center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.wrapper .header-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-container header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+.toggler {
+    display: none;
+  }
+.header-container header > nav > ul {
+  display: flex;
+  list-style: none;
+}
+.header-container header > nav > ul > li {
+  margin: 0px 10px;
+}
+
+.showcase {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 20px;
+}
+.showcase .hello {
+  background: #fff;
+  color: rgba(65, 105, 225, 0.9);
+  font-weight: bold;
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+.showcase h1 {
+  padding: 5px 0;
+  margin: 10px 0;
+}
+.showcase p {
+  width: 60%;
+  margin: 10px 0;
+}
+
+.social {
+  margin: 10px 0;
+}
+.social a {
+  margin-left: 10px;
+}
+.social a:first-child {
+  margin-left: 0;
+}
+
+
+/* portfolio */
+
+.wrapper .portfolio {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+}
+.portfolio article {
+  padding: 2rem;
+}
+.portfolio .about-intro {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.8)
+}
+.portfolio article > h5 {
+  font-weight: bold;
+}
+.portfolio article > h5 > span {
+  border-bottom: 4px solid #00008b;
+}
+.about-main {
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  margin-bottom: 20px;
+}
+.phone > span:last-child, .email >  span:last-child {
+  margin-left: 20px;
+}
+.email {
+  margin-left: 2rem;
+}
+
+.resume {
+  background: linear-gradient(rgba(0, 0, 255, 0.8),
+      rgba(65, 105, 225, 0.7));
+  color: white;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+}
+
+
+/* Skills */
+.skills-container {
+  background: #f5f5f5;
+}
+.skills {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem 1rem;
+}
+.skills-intro {
+  padding: 3rem 0;
+}
+.skills-intro> button {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 255, 0.8);
+  color: white;
+  border: 0;
+}
+.skills-intro > p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skills-detail {
+  display: flex;
+}
+.skills-detail > article {
+  background: #fff;
+  padding: 1.5rem;
+  margin-left: 15px;
+  width: 400px;
+  font-size: 14px;
+}
+.skills-detail > article:first-child {
+  margin-left: 0;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 900px) {
+  .toggler {
+    display: block;
+  }
+  /* .wrapper .header-container a {
+  text-decoration: none;
+  color: #00008b;
+} */
+  .header-container header {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .header-container header > nav > ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+.header-container header > nav > ul > li {
+  margin: 5px 0;
+}
+
+.header {
+  height: 250px;
+  background: #000;
+}
+.showcase {
+  width: 100%;
+  padding: 3rem 20px;
+}
+.showcase p {
+  width: 100%;
+  margin: 10px 0;
+}
+.portfolio {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .header-container {
+    background: linear-gradient(
+      rgba(0, 0, 255, 0.8),
+      rgba(65, 105, 225, 0.7),
+      rgba(0, 0, 255, 0.8)
+    ),url('me_bg_small.png') center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+  .portfolio {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+} 
+.portfolio > img {
+  display: none;
+}
+.details {
+  flex-direction: column;
+}
+.email {
+  margin-left: 0;
+}
+.phone > span:last-child, .email >  span:last-child {
+  margin-left: 5px;
+}
+.portfolio article {
+  padding: 5px;
+}
+.portfolio .about-intro {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.8)
+}
+.skills {
+  width: 100%;
+}
+.skills-intro > p {
+  width: 100%;
+}
+.skills-detail {
+  flex-direction: column;
+}
+.skills-detail > article {
+  padding: 1rem;
+  margin: 10px 0;
+  width: 100%;
+}
+.resume {
+  padding: 0.5rem 0.6rem;
+  border-radius: 15px;
+}
+
+}

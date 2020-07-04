@@ -2,9 +2,110 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
 	<title>Uncleabbey</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/aef4268767.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>Hello World</h1>
+	<div class="wrapper">
+		<!-- Header section -->
+		<section class="header-container">
+			<header>
+				<h3><a href="#">Uncleabbey</a></h3>
+				<nav>
+					<span class="toggler">
+					<i class="fas fa-bars fa-2x"></i>
+					</span>
+					<ul class="navigator">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Resume</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Showcase Section -->
+			<section class="showcase">
+				<span class="hello">Hello !</span>
+				<h1>I Am A Web Developer</h1>
+				<p class="introduction">Do you need a team player whose eyes is always at the goal? Then You are in a right place. </p>
+				<article class="social">
+					<a href="https://m.facebook.com/kayode.abiodun.7543653" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/_uncleabbey_" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/kayode-gabriel-abiodun-a53627a9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/uncleabbey" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://medium.com/@uncleabbey" target="_blank"><i class="fab fa-medium"></i></a>
+				</article>
+			</section>
+		</section>
+
+		<!-- Portfolio Section -->
+		<section class="portfolio">
+			<img src="me.png" alt="">
+			<article>
+				<h5><span>About</span> Me</h5>
+				<p class="about-intro">I am a Professional Web Developer having 2 Years of Experience</p>
+				<p class="about-main">My stacks are MERN, PERN, Django Rest Framework with React as Frontend. I am also coversant with writting automated test for Test driven Development as well as the use of continous integration tools like Travis CI and Circle CI. I have also experienced collaboration with other teams using version control tools like git and deployment of apps to cloud like heroku, netlify and vercel.</p>
+				<div class="details">
+					<p class="phone">
+						<span>
+							<i class="fas fa-phone-alt"></i>
+							Phone
+						</span>
+						<span>07069388069</span>
+					</p>
+					<p class="email">
+						<span>
+							<i class="fas fa-envelope"></i>
+							Email
+						</span>
+						<span>KayodeGabrielA@gmail.com</span>
+					</p>
+				</div>
+				<a href="https://drive.google.com/file/d/1_LQp1Q-pTsfy0nM4Tu1Q5YrMYwlOEAGb/view?usp=sharing" target="_blank" class="resume">
+					Download Resume
+				</a>
+			</article>
+		</section>
+		
+		<!-- Skills Section -->
+		<div class="skills-container">
+			<section class="skills">
+			<article class="skills-intro">
+			<button type="disable">What I do</button>
+				<h3>My Skills</h3>
+				<p>Over the past year, I have been able to acquire the following skills: </p>
+			</article>
+				
+				<div class="skills-detail">
+					<article>
+						<i class="fas fa-laptop fa-2x"></i>
+						<h6>Web Development</h6>
+						<p>Web Development using tools like HTML, CSS, Javascript, React, State Management with Redux and GraphQL on Client-side while using Nodejs or Django Rest Framework for Server-side development</p>
+					</article>
+					<article>
+						<i class="fas fa-chart-bar fa-2x"></i>
+						<h6>Digital Marketing</h6>
+						<p>Search Engine Optimization, Search Engine Advertisement, Social Media Advertisement, Email Advertisement etc</p>
+					</article>
+					<article>
+						<i class="fas fa-pen fa-2x"></i>
+						<h6>Content Writing</h6>
+						<p>Writing of Technical Articles, Blogs and Tutorials. I just started how to write API Documentations</p>
+					</article>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<p>Made with ❤️ by Uncleabbey &copy; 2020</p>
+		</footer>
+	</div>
+	<!-- Wrapper End -->
+	<script src="main.js"></script>
 </body>
 </html>
