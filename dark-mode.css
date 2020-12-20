@@ -7,7 +7,9 @@
 	box-sizing: inherit;
 }
 body {
-	font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 #outer-div{
     margin: auto;
@@ -26,19 +28,11 @@ body {
     position: relative;
     bottom: 1px;
 }
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.dark-mode-skills {
-  background-color: black;
-  color: black;
-}
 .header-container {
   background: linear-gradient(
-      rgba(0, 0, 255, 0.8),
-      rgba(65, 105, 225, 0.7),
-      rgba(0, 0, 255, 0.8)
+      rgba(9, 9, 183, 0.8),
+      rgba(3, 3, 6, 0.7),
+      rgba(12, 12, 23, 0.8)
     ),url('https://res.cloudinary.com/kayode/image/upload/v1608363380/new_ab-removebg-preview_x8rkqo.png') center no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -59,7 +53,7 @@ body {
  text-decoration: none;
 }
 /* Header */
-.wrapper .header-container {
+/* .wrapper .header-container {
   background: linear-gradient(
       rgba(0, 0, 255, 0.8),
       rgba(65, 105, 225, 0.7),
@@ -67,7 +61,7 @@ body {
     ),url('https://res.cloudinary.com/kayode/image/upload/v1608363380/new_ab-removebg-preview_x8rkqo.png') center no-repeat;
   background-size: cover;
   color: #ffffff;
-}
+} */
 .wrapper .header-container a {
   text-decoration: none;
   color: #ffffff;
@@ -122,7 +116,10 @@ body {
 .social a:first-child {
   margin-left: 0;
 }
-
+.wrapper {
+  background: #000;
+  color: #fff;
+}
 
 /* portfolio */
 
@@ -132,6 +129,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   justify-content: space-between;
+  
 }
 .portfolio article {
   padding: 2rem;
@@ -139,7 +137,7 @@ body {
 .portfolio .about-intro {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 255, 0.8)
+  color: rgba(255, 255, 255, 0.8)
 }
 .portfolio article > h5 {
   font-weight: bold;
@@ -177,7 +175,8 @@ body {
 
 /* Skills */
 .skills-container {
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
+  background: #000;
 }
 .skills {
   text-align: center;
@@ -187,6 +186,7 @@ body {
 }
 .skills-intro {
   padding: 3rem 0;
+  color: white;
 }
 .skills-intro> button {
   padding: 5px 10px;
@@ -202,18 +202,15 @@ body {
 .skills-detail {
   display: flex;
 }
-.article-light {
-  background: #fff;
-}
-.article-dark {
-  background: #000;
-}
+
 .article {
-  
+   background: grey;
   padding: 1.5rem;
   margin-left: 15px;
   width: 400px;
   font-size: 14px;
+  color: #000;
+
 }
 .skills-detail > article:first-child {
   margin-left: 0;
@@ -235,14 +232,17 @@ body {
 }
 .project-detail > article a {
   text-decoration: none;
+  color: white;
 }
 .project-detail > article a:hover {
-  color: black;
+  color: red;
   text-decoration: underline;
 }
 footer {
   text-align: center;
   padding: 10px;
+  background: #000;
+  color: #fff;
 }
 
 /* media queries */

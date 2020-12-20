@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1"> 
 	<title>Uncleabbey</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" id="theme-link">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/aef4268767.js" crossorigin="anonymous"></script>
 </head>
@@ -13,18 +13,21 @@
 		<!-- Header section -->
 		<section class="header-container">
 			<header>
-				<h3><a href="#">Uncleabbey</a></h3>
+				<h3><a href="/">Uncleabbey</a></h3>
 				<nav>
 					<span class="toggler">
 					<i class="fas fa-bars fa-2x"></i>
 					</span>
 					<ul class="navigator">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="#about">About</a></li>
 						<li><a href="#">Contact</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#">Blog</a></li>
+						<li>
+								<div id="outer-div">
+									<div id="inner-div"></div>
+								</div>
+						</li>
 					</ul>
 				</nav>
 			</header>
@@ -46,8 +49,8 @@
 
 		<!-- Portfolio Section -->
 		<section class="portfolio">
-			<img src="me.png" alt="">
-			<article>
+			<img src="https://res.cloudinary.com/kayode/image/upload/v1608363380/me_tfee5d.png" alt="Portfolio Image">
+			<article id="about">
 				<h5><span>About</span> Me</h5>
 				<p class="about-intro">I am a Professional Web Developer having 2 Years of Experience</p>
 				<p class="about-main">My stacks are MERN, PERN, Django Rest Framework with React as Frontend. I am also coversant with writting automated test for Test driven Development as well as the use of continous integration tools like Travis CI and Circle CI. I have also experienced collaboration with other teams using version control tools like git and deployment of apps to cloud like heroku, netlify and vercel.</p>
@@ -83,17 +86,17 @@
 			</article>
 				
 				<div class="skills-detail">
-					<article>
+					<article class="article article-light">
 						<i class="fas fa-laptop fa-2x"></i>
 						<h6>Web Development</h6>
 						<p>Web Development using tools like HTML, CSS, Javascript, React, State Management with Redux and GraphQL on Client-side while using Nodejs or Django Rest Framework for Server-side development</p>
 					</article>
-					<article>
+					<article class="article article-light">
 						<i class="fas fa-chart-bar fa-2x"></i>
 						<h6>Digital Marketing</h6>
 						<p>Search Engine Optimization, Search Engine Advertisement, Social Media Advertisement, Email Advertisement etc</p>
 					</article>
-					<article>
+					<article class="article article-light">
 						<i class="fas fa-pen fa-2x"></i>
 						<h6>Content Writing</h6>
 						<p>Writing of Technical Articles, Blogs and Tutorials. I just started how to write API Documentations</p>
@@ -101,10 +104,423 @@
 				</div>
 			</section>
 		</div>
+		<!-- Projects Section -->
+		<div class="skills-container" id="projects">
+			<section class="skills">
+			<article class="skills-intro">
+			<button type="disable">What I've done</button>
+				<h3>My Projects</h3>
+				<p>Over the past year, I have been able to participate in building the following projects: </p>
+			</article>
+				
+				<div class="project-detail">
+					<article data-toggle="modal" data-target="#exampleModal">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463784/brightly_hq6ifd.png" alt="Brightly Picture">
+						<span><a href="https://brightly.netlify.app/" target="_blank">Brightly</a></span>
+					</article>
+					<article data-toggle="modal" data-target="#exampleModal2">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463785/zerohunger_ukbzpc.png" alt="Zerohunger Picture">
+						<span><a href="https://tender-yonath-7dcdcc.netlify.app/" target="_blank">Zerohunger</a></span>
+					</article>
+				</div>
+				<div class="project-detail">
+					<article data-toggle="modal" data-target="#exampleModal3">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463785/blog_q6xquf.png" alt="Brightly Picture">
+						<span><a href="https://uncleabbey-blog.herokuapp.com/" target="_blank">Blog API</a></span>
+					</article>
+					<article data-toggle="modal" data-target="#exampleModal4">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463784/weather_laygdk.png" alt="Zerohunger Picture">
+						<span><a href="https://stutern-weather.netlify.app/" target="_blank">Weather App</a></span>
+					</article>
+				</div>
+				<div class="project-detail">
+					<article data-toggle="modal" data-target="#exampleModal5">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463784/chat_kfuqui.png" alt="Brightly Picture">
+						<span><a href="" target="_blank">Quick Chat</a></span>
+					</article>
+					<article data-toggle="modal" data-target="#exampleModal6">
+						<img src="https://res.cloudinary.com/kayode/image/upload/v1608463785/transall_swe7bx.png" alt="Zerohunger Picture">
+						<span><a href="https://transall.netlify.app/" target="_blank">TransAll App</a></span>
+					</article>
+				</div>
+			</section>
+		</div>
+		
 		<footer>
 			<p>Made with ❤️ by Uncleabbey &copy; 2020</p>
 		</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Brightly</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://brightly.netlify.app/" target="_blank">https://brightly.netlify.app/</a></span>
+						</li>
+						<li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-frontend" target="_blank">https://github.com/uncleabbey/brightly-frontend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-backend" target="_blank">https://github.com/uncleabbey/brightly-backend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Link:
+							</span>
+							<span className="link"><a href="https://brightly-api.herokuapp.com/" target="_blank">https://brightly-api.herokuapp.com</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>Brightly is an Inter-track capstone project of the <a href="https://stutern.com/">Stutern Graduate</a> Programme. It is an e-learning platform that will support children’s education in the most effective way, to cushion the effects of school closures caused by the coronavirus outbreak. 
+					</p>
+					<p>	With this product, learners can take their daily video lessons, have group interactions with their teachers and peers and do their daily class activities as they would in a traditional classroom.
+
+					</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>Node</li>
+						<li>Expresss</li>
+						<li>Swagger For Documentation</li>
+						<li>Mocha for Unit Test</li>
+						<li>Mocha for Unit Test</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Vanilla Javascript</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Zerohunger</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://tender-yonath-7dcdcc.netlify.app/" target="_blank">https://tender-yonath-7dcdcc.netlify.app/</a></span>
+						</li>
+						<li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/BuildForSDG/Team-250-Backends" target="_blank">https://github.com/BuildForSDG/Team-250-Backends</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/BuildForSDG/Team-250-Frontends" target="_blank">https://github.com/BuildForSDG/Team-250-Frontends</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Link:
+							</span>
+							<span className="link"><a href="https://zerohunger-backend.herokuapp.com/" target="_blank">https://zerohunger-backend.herokuapp.com/</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>Zerohunger is an Andela Build for SDGs programme cohort one project. It is web application  that seeks to End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
+
+					</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>Django Rest Framework</li>
+						<li>React</li>
+						<li>Swagger For Documentation</li>
+						<li>Redux</li>
+						<li>CSS</li>
+						<li>Vanilla Javascript</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Blog API</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://uncleabbey-blog.herokuapp.com/" target="_blank">https://uncleabbey-blog.herokuapp.com/</a></span>
+						</li>
+						<!-- <li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-frontend" target="_blank">https://github.com/uncleabbey/brightly-frontend</a></span>
+						</li> -->
+						<li>
+							<span>
+								Backend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/node-blog" target="_blank">https://github.com/uncleabbey/node-blog</a></span>
+						</li>
+						<!-- <li>
+							<span>
+								Backend Link:
+							</span>
+							<span className="link"><a href="https://brightly-api.herokuapp.com/" target="_blank">https://brightly-api.herokuapp.com</a></span>
+						</li> -->
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>This is a simple nodejs express API that includes authentications, post and comments.</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>Node</li>
+						<li>Expresss</li>
+						<li>Swagger For Documentation</li>
+						<li>Mocha for Unit Test</li>
+						<li>MongoDb</li>
+						<li>Mongoose</li>
+						<li>Nyc</li>
+						<li>Code Coverage</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Weather App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://stutern-weather.netlify.app/" target="_blank">https://stutern-weather.netlify.app/</a></span>
+						</li>
+						<li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-frontend" target="_blank">https://github.com/uncleabbey/stutern-weather-app</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>Brightly is an Inter-track capstone project of the <a href="https://stutern.com/">Stutern Graduate</a> Programme. It is an e-learning platform that will support children’s education in the most effective way, to cushion the effects of school closures caused by the coronavirus outbreak. 
+					</p>
+					<p>	With this product, learners can take their daily video lessons, have group interactions with their teachers and peers and do their daily class activities as they would in a traditional classroom.
+
+					</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Vanilla Javascript</li>
+						<li>Open weather Map API</li>
+						<li>Google Location API</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Quick Chat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://brightly.netlify.app/" target="_blank">https://brightly.netlify.app/</a></span>
+						</li>
+						<li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-frontend" target="_blank">https://github.com/uncleabbey/brightly-frontend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/uncleabbey/brightly-backend" target="_blank">https://github.com/uncleabbey/brightly-backend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Link:
+							</span>
+							<span className="link"><a href="https://brightly-api.herokuapp.com/" target="_blank">https://brightly-api.herokuapp.com</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>Brightly is an Inter-track capstone project of the <a href="https://stutern.com/">Stutern Graduate</a> Programme. It is an e-learning platform that will support children’s education in the most effective way, to cushion the effects of school closures caused by the coronavirus outbreak. 
+					</p>
+					<p>	With this product, learners can take their daily video lessons, have group interactions with their teachers and peers and do their daily class activities as they would in a traditional classroom.
+
+					</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>Node</li>
+						<li>Expresss</li>
+						<li>Swagger For Documentation</li>
+						<li>Mocha for Unit Test</li>
+						<li>Mocha for Unit Test</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Vanilla Javascript</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Transall App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-header">
+					<ul>
+						<li>
+							<span>
+								Hosted At:
+							</span>
+							<span className="link"><a href="https://transall.netlify.app/" target="_blank">https://transall.netlify.app/</a></span>
+						</li>
+						<li>
+							<span>
+								Frontend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/BuildForSDGCohort2/Team-091-Group-A-Frontend" target="_blank">https://github.com/BuildForSDGCohort2/Team-091-Group-A-Frontend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Repo:
+							</span>
+							<span className="link"><a href="https://github.com/BuildForSDGCohort2/Team-091-Group-A-Backend" target="_blank">https://github.com/BuildForSDGCohort2/Team-091-Group-A-Backend</a></span>
+						</li>
+						<li>
+							<span>
+								Backend Link:
+							</span>
+							<span className="link"><a href=https://backend-91.herokuapp.com/" target="_blank">https://backend-91.herokuapp.com/</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="about-project">
+					<h5>About Project</h5>
+					<p>
+						Transall is an Andela Build for SDG project that aim to that solves one of the sustainable development goals which is transportation which birthed the Idea TranALL. Often times, people move from one garage to another or makes calls to agent in order to get adequate information about where they are travelling to. The solution would allow you to make inform decisions in order to choose between different form of transportation.
+					</p>
+				</div>
+				<div class="technology-used">
+					<h5>Technology Used</h5>
+					<ul>
+						<li>Node</li>
+						<li>Expresss</li>
+						<li>Swagger For Documentation</li>
+						<li>Mocha for Unit Test</li>
+						<li>React</li>
+						<li>Swagger For Documentation</li>
+						<li>Redux</li>
+						<li>CSS</li>
+						<li>Vanilla Javascript</li>
+					</ul>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
 	<!-- Wrapper End -->
 	<script src="main.js"></script>
 </body>
