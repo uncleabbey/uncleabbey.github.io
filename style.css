@@ -6,6 +6,9 @@
 *::after {
 	box-sizing: inherit;
 }
+html {
+scroll-behavior: smooth;
+}
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
