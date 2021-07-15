@@ -204,6 +204,7 @@ body {
 
 .skills-detail {
   display: flex;
+  justify-content: center;
 }
 .article-light {
   background: #fff;
